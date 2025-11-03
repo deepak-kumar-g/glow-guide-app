@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glow Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Glow Guide</h1>
+      <p>Your personalized beauty product advisor</p>
+    </header>
+
+    <section class="tabs">
+      <button class="tab" onclick="switchTab('skin')">Skin</button>
+      <button class="tab" onclick="switchTab('hair')">Hair</button>
+    </section>
+
+    <section class="concern-section hidden" id="skin-concerns">
+      <h2>Select Your Skin Concern</h2>
+      <div class="concern-buttons">
+        <button onclick="showProducts('skin', 'Acne')">Acne</button>
+        <button onclick="showProducts('skin', 'Dark Spots')">Dark Spots</button>
+        <button onclick="showProducts('skin', 'Dullness')">Dullness</button>
+        <button onclick="showProducts('skin', 'Oily Skin')">Oily Skin</button>
+        <button onclick="showProducts('skin', 'Dryness')">Dryness</button>
+      </div>
+    </section>
+
+    <section class="concern-section hidden" id="hair-concerns">
+      <h2>Select Your Hair Concern</h2>
+      <div class="concern-buttons">
+        <button onclick="showProducts('hair', 'Hairfall')">Hairfall</button>
+        <button onclick="showProducts('hair', 'Frizziness')">Frizziness</button>
+        <button onclick="showProducts('hair', 'Split Ends')">Split Ends</button>
+        <button onclick="showProducts('hair', 'Dandruff')">Dandruff</button>
+        <button onclick="showProducts('hair', 'Dryness')">Dryness</button>
+      </div>
+    </section>
+
+    <section id="product-list" class="products-grid"></section>
+  </div>
+
+  <script src="script.jsx"></script>
+  <script src="app.js"></script>
+</body>
+</html>
+</html>
